@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Compile Include="DataProcessing\FunctionsAndCollections.fs" />
+    <Compile Include="DataProcessing\FunctionsAndCollections2.fs" />
     <Compile Include="DataProcessing\LoanPayments.fs" />
     <None Include="DataProcessing\Loan payments data.csv" />
     <Compile Include="BasicLanguageStructures\SingleValuedUnions.fs" />
