@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="BasicLanguageStructures\SingleValuedUnions.fs" />
+    <Compile Include="BasicLanguageStructures\UnitsOfMeasure.fs" />
+    <Compile Include="BasicLanguageStructures\CollectionAPIs.fs" />
+    <Compile Include="BasicLanguageStructures\Functions.fs" />
+    <Compile Include="BasicLanguageStructures\Maps.fs" />
+    <Compile Include="BasicLanguageStructures\Sets.fs" />
+    <Compile Include="BasicLanguageStructures\Sequences.fs" />
+    <Compile Include="BasicLanguageStructures\Lists.fs" />
+    <Compile Include="BasicLanguageStructures\Arrays.fs" />
+    <Compile Include="BasicLanguageStructures\Collections.fs" />
+    <Compile Include="BasicLanguageStructures\Options.fs" />
+    <Compile Include="BasicLanguageStructures\DiscriminatedUnion.fs" />
+    <Compile Include="BasicLanguageStructures\Tuple.fs" />
+    <Compile Include="BasicLanguageStructures\Record.fs" />
+    <Compile Include="Modelling\MustBeValid.fs" />
+    <Compile Include="Modelling\BehaviourBeforeData.fs" />
+    <Compile Include="HigherOrderFunctions\StateMachine.fs" />
+    <Compile Include="HigherOrderFunctions\FunctionComposition.fs" />
+    <Compile Include="HigherOrderFunctions\PartialFunctions.fs" />
+    <Compile Include="HigherOrderFunctions\DependencyInjection.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataProcessing\" />
+  </ItemGroup>
+
+</Project>
