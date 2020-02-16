@@ -5,6 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="DataProcessing\FunctionsAndCollections.fs" />
+    <Compile Include="DataProcessing\LoanPayments.fs" />
+    <None Include="DataProcessing\Loan payments data.csv" />
     <Compile Include="BasicLanguageStructures\SingleValuedUnions.fs" />
     <Compile Include="BasicLanguageStructures\UnitsOfMeasure.fs" />
     <Compile Include="BasicLanguageStructures\CollectionAPIs.fs" />
@@ -25,10 +28,6 @@
     <Compile Include="HigherOrderFunctions\FunctionComposition.fs" />
     <Compile Include="HigherOrderFunctions\PartialFunctions.fs" />
     <Compile Include="HigherOrderFunctions\DependencyInjection.fs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DataProcessing\" />
   </ItemGroup>
 
 </Project>
