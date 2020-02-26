@@ -21,5 +21,5 @@ module BehaviourBeforeData =
                 else None
 
 
-    openCheckingAccount None (None, None) 500M<money>
+    //openCheckingAccount None (None, None) 500M<money>
 

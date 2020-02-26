@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="DataProcessing\OrdersParser.fs" />
+    <None Include="DataProcessing\Orders.csv" />
+    <Compile Include="DataProcessing\TailRecursion.fs" />
+    <Compile Include="DataProcessing\LargeDocuments.fs" />
     <Compile Include="DataProcessing\FunctionsAndCollections.fs" />
     <Compile Include="DataProcessing\FunctionsAndCollections2.fs" />
     <Compile Include="DataProcessing\LargeDocumentIO.fs" />
@@ -30,6 +34,10 @@
     <Compile Include="HigherOrderFunctions\FunctionComposition.fs" />
     <Compile Include="HigherOrderFunctions\PartialFunctions.fs" />
     <Compile Include="HigherOrderFunctions\DependencyInjection.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FParsec" Version="1.1.1" />
   </ItemGroup>
 
 </Project>

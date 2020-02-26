@@ -24,5 +24,32 @@ module LargeDocumentIO =
 
     timeAFunction f
 
+    let wikiTitlesFile = @"C:\Users\kemar\Downloads\enwiki-latest-all-titles"
+    let readAllLines fileName = 
+        fileName
+        |> File.ReadAllLines
+        |> Seq.ofArray
 
+    let readLines fileName = 
+        fileName
+        |> File.ReadLines
+
+    let readSingleLines filePath =
+        seq {
+                let rec readLine (reader:StreamReader) = 
+                    seq {
+                        if reader.EndOfStream = false
+                        then    
+                            yield reader.ReadLine()
+                            yield! readLine reader
+                    }
+
+                use stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.None)
+                let reader = new StreamReader(stream)
+                yield! readLine reader
+        }
+
+    wikiTitlesFile |> readAllLines |> Seq.length
+    wikiTitlesFile |> readLines |> Seq.length
+    wikiTitlesFile |> readSingleLines |> Seq.length
 
